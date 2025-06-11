@@ -7,9 +7,9 @@
     <title>Bird Match 🐦</title>
   </head>
   <body>
-    <section class="start-page">
+    <section class="start-page hidden">
       <h1 class="game-name-heading">BIRD MATCH</h1>
-      <h3 class="highscore-1">
+      <h3 class="highscore">
         HIGH SCORE: <span class="highscore-1-element">100</span>
       </h3>
       <div class="btn-container">
@@ -17,7 +17,34 @@
         <button class="about-game-btn">ABOUT THE GAME</button>
       </div>
     </section>
-    <section class="game-page hidden"></section>
+    <section class="game-page">
+      <header>
+        <div class="score-box">
+          <h3 class="score-counter">
+            SCORE: <span class="score-counter-element">100</span>
+          </h3>
+          <h3>BIRD MATCH</h3>
+          <h3 class="highscore-tracker">
+            HIGH SCORE: <span class="highscore-tracker-element">100</span>
+          </h3>
+        </div>
+      </header>
+      <img
+        src="assets/stellers-jay.jfif"
+        alt="steller's jay perched on a tree branch"
+        class="bird-img"
+      />
+      <div class="options-container">
+        <div class="options-row">
+          <button class="option-1-btn">BLUE JAY</button>
+          <button class="option-2-btn">STELLER'S JAY</button>
+        </div>
+        <div class="options-row">
+          <button class="option-3-btn">NORTHERN CARDINAL</button>
+          <button class="option-4-btn">EURASIAN MAGPIE</button>
+        </div>
+      </div>
+    </section>
     <section class="game-over hidden"></section>
     <section class="about-and-credits hidden"></section>
     <script src="script.js"></script>
