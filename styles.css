@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "ranchers-regular";
+  src: url("assets/Ranchers-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: #e9dabd;
+  background-color: #e9dabd;
+  font-family: ranchers-regular, Impact, "Arial Narrow Bold", sans-serif;
+  padding: 30px 60px;
+}
+
+h1 {
+  -webkit-text-stroke: 2px #684e1b;
+  font-size: 100px;
+  letter-spacing: 3px;
+  margin: 0;
+}
+h3 {
+  -webkit-text-stroke: 1px #684e1b;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+button {
+  display: block;
+  font-family: ranchers-regular, Impact, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+  color: #e9dabd;
+  background-color: #684e1b;
+  border: 2px solid #4c4027;
+  margin: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

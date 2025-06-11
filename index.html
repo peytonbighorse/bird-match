@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Bird Match 🐦/title>
-</head>
-<body>
-    <section class="start-page"></section>
-    <section class="game-page"></section>
-    <section class="game-over"></section>
-    <section class="about-and-credits">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bird Match 🐦</title>
+  </head>
+  <body>
+    <section class="start-page">
+      <h1 class="game-name-heading">BIRD MATCH</h1>
+      <h3 class="highscore-1">
+        HIGH SCORE: <span class="highscore-1-element">100</span>
+      </h3>
+      <div class="btn-container">
+        <button class="start-game-btn">START GAME</button>
+        <button class="about-game-btn">ABOUT THIS GAME</button>
+      </div>
     </section>
+    <section class="game-page hidden"></section>
+    <section class="game-over hidden"></section>
+    <section class="about-and-credits hidden"></section>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
