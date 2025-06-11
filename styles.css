@@ -14,10 +14,19 @@ body {
   margin: 0;
   padding: 0 30px;
 }
-
+.about-and-credits {
+  text-align: center;
+}
 h1 {
   -webkit-text-stroke: 2px #684e1b;
   font-size: 100px;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+h2 {
+  -webkit-text-stroke: 2px #684e1b;
+  font-size: 50px;
   letter-spacing: 3px;
   margin: 0;
 }
@@ -27,7 +36,11 @@ h3 {
   letter-spacing: 2px;
   margin: 0;
 }
-
+p {
+  margin: 0 100px;
+  -webkit-text-stroke: 1px #684e1b;
+  letter-spacing: 2px;
+}
 button {
   display: block;
   font-family: sigmar-regular, Impact, "Arial Narrow Bold", sans-serif;
@@ -77,6 +90,13 @@ button:hover {
 .options-row {
   display: flex;
   justify-content: center;
+}
+.credits-section a {
+  color: #684e1b;
+}
+.exit-about-btn {
+  display: block;
+  margin: 30px auto;
 }
 .hidden {
   display: none;
