@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "ranchers-regular";
-  src: url("assets/Ranchers-Regular.ttf");
+  font-family: "sigmar-regular";
+  src: url("assets/Sigmar-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -8,7 +8,7 @@
 body {
   color: #e9dabd;
   background-color: #e9dabd;
-  font-family: ranchers-regular, Impact, "Arial Narrow Bold", sans-serif;
+  font-family: sigmar-regular, Impact, "Arial Narrow Bold", sans-serif;
   padding: 30px 60px;
 }
 
@@ -27,18 +27,25 @@ h3 {
 
 button {
   display: block;
-  font-family: ranchers-regular, Impact, "Arial Narrow Bold", sans-serif;
+  font-family: sigmar-regular, Impact, "Arial Narrow Bold", sans-serif;
   letter-spacing: 2px;
   color: #e9dabd;
   background-color: #684e1b;
   border: 2px solid #4c4027;
   margin: 5px;
+  width: 200px;
+  height: 40px;
 }
 
 button:hover {
   cursor: pointer;
 }
-
+.start-game-btn {
+  font-size: 20px;
+}
+.about-game-btn {
+  font-size: 13px;
+}
 .hidden {
   display: none;
 }
