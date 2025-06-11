@@ -43,7 +43,9 @@ button {
 button:hover {
   cursor: pointer;
 }
-.start-game-btn {
+.start-game-btn,
+.play-again-btn,
+.home-btn {
   font-size: 20px;
 }
 .about-game-btn {
