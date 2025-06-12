@@ -8,15 +8,13 @@
 body {
   color: #e9dabd;
   background-image: url("/assets/Untitled_Artwork.webp");
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100vh;
   overflow: hidden;
   font-family: sigmar-regular, Impact, "Arial Narrow Bold", sans-serif;
 }
-.start-page {
-  position: relative;
-}
+
 .about-and-credits {
   text-align: center;
 }
@@ -35,7 +33,7 @@ h2 {
 }
 h3 {
   -webkit-text-stroke: 1px #684e1b;
-  font-size: 30px;
+  font-size: 45px;
   letter-spacing: 2px;
   margin: 0;
 }
@@ -47,23 +45,20 @@ p {
 button {
   display: block;
   font-family: sigmar-regular, Impact, "Arial Narrow Bold", sans-serif;
-  font-size: 13px;
+  font-size: 30px;
   letter-spacing: 2px;
-  color: #e9dabd;
-  background-color: #684e1b;
+  color: #4c4027;
+  background-color: #e9dabd;
   border: 4px solid #4c4027;
-  margin: 5px;
-  width: 200px;
-  height: 40px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 350px;
+  padding: 10px 0;
 }
 
 button:hover {
   cursor: pointer;
-}
-.start-game-btn,
-.play-again-btn,
-.home-btn {
-  font-size: 20px;
 }
 
 .score-box {
@@ -102,6 +97,19 @@ button:hover {
   display: block;
   margin: 30px auto;
   font-size: 20px;
+}
+.start-page {
+  padding: 50px 50px;
+}
+.game-name-heading {
+  text-align: center;
+}
+.highscore {
+  text-align: center;
+}
+.btn-container {
+  position: relative;
+  top: 100px;
 }
 .hidden {
   display: none;
