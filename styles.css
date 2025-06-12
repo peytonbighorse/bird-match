@@ -98,13 +98,16 @@ button:hover {
   margin: 30px auto;
   font-size: 20px;
 }
-.start-page {
+.start-page,
+.game-over {
   padding: 50px 50px;
 }
-.game-name-heading {
+.game-name-heading,
+.game-over-heading {
   text-align: center;
 }
-.highscore {
+.highscore,
+.final-score {
   text-align: center;
 }
 .btn-container {
