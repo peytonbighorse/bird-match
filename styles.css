@@ -52,10 +52,12 @@ button {
   margin-bottom: 15px;
   width: 350px;
   padding: 10px 0;
+  transition: all 200ms ease-in-out;
 }
 
 button:hover {
   cursor: pointer;
+  filter: brightness(0.7);
 }
 
 .score-box {
@@ -68,6 +70,8 @@ button:hover {
 }
 
 .bird-img {
+  width: 320px;
+  height: 240px;
   display: block;
   margin: 50px auto;
   padding: 15px;
@@ -136,6 +140,27 @@ button:hover {
   background-color: #e9dabd5d;
   border-radius: 20px;
   padding: 25px 0;
+}
+
+.modal {
+  text-align: left;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  color: #4c4027;
+  top: 150px;
+  display: block;
+  justify-content: space-evenly;
+  overflow: visible;
+  margin: 0 30px;
+}
+.modal div {
+  margin: 0;
+  font-size: 50px;
+}
+.modal p {
+  font-size: 25px;
+  margin: 0;
 }
 
 .hidden {
