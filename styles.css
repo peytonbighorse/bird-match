@@ -10,6 +10,7 @@ body {
   background-image: url("/assets/Untitled_Artwork.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   overflow: hidden;
   font-family: sigmar-regular, Impact, "Arial Narrow Bold", sans-serif;
@@ -123,12 +124,16 @@ button:hover {
   position: absolute;
   font-size: 20px;
   width: 200px;
-  left: 40px;
+  left: 50px;
 }
 .about-and-credits {
   margin: 50px auto;
-  max-width: 1000px;
+  max-width: 60vw;
   text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 20px 50px;
 }
 
 .about-and-credits h2 {
@@ -140,6 +145,9 @@ button:hover {
   background-color: #e9dabd5d;
   border-radius: 20px;
   padding: 25px 0;
+}
+.about-and-credits p {
+  font-size: 20px;
 }
 
 .modal {
