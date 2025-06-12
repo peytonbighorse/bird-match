@@ -1,18 +1,21 @@
 @font-face {
   font-family: "sigmar-regular";
-  src: url("assets/Sigmar-Regular.ttf");
-  font-weight: normal;
+  src: url("assets/Rubik-VariableFont_wght.ttf");
+  font-weight: 900;
   font-style: normal;
 }
 
 body {
   color: #e9dabd;
-  background-color: #e9dabd;
+  background-image: url("/assets/Untitled_Artwork.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
   font-family: sigmar-regular, Impact, "Arial Narrow Bold", sans-serif;
 }
 .start-page {
-  margin: 0;
-  padding: 0 30px;
+  position: relative;
 }
 .about-and-credits {
   text-align: center;
