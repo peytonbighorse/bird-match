@@ -43,6 +43,7 @@
 }
 
 //Gameplay
+
 //  Choice selection
 //Buttons
 const optionButtons = document.querySelectorAll(".option-btn");
@@ -67,9 +68,9 @@ function showAnswer(userChoice, correctChoice) {
   let num = 0;
   console.log(userChoice.innerHTML.toLowerCase());
   console.log(correctChoice);
-  optionButtons.forEach((userChoice) => {
-    userChoice.style.backgroundColor = "#e9dabd";
-    userChoice.style.color = "#4c4027";
+  optionButtons.forEach((button) => {
+    button.style.backgroundColor = "#e9dabd";
+    button.style.color = "#4c4027";
   });
   if (userChoice.innerHTML.toLowerCase() === correctChoice.toLowerCase()) {
     userChoice.style.backgroundColor = "green";
@@ -90,8 +91,6 @@ function showAnswer(userChoice, correctChoice) {
     userChoice.style.backgroundColor = "red";
     userChoice.style.color = "#e9dabd";
   }
-  //Each time:
-  //    - after a moment the next bird appears
 }
 
 //      Optional:
