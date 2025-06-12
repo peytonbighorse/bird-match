@@ -66,25 +66,30 @@ button:hover {
   justify-content: space-between;
   background-color: #684e1b;
   border: 5px solid #4c4027;
+  border-radius: 5px;
   padding: 0 10px;
 }
 
 .bird-img {
   display: block;
-  margin: 50px auto 30px auto;
-  padding: 10px;
-  background-color: #684e1b;
+  margin: 50px auto;
+  padding: 15px;
+  background-color: #e9dabd;
   border: 5px solid #4c4027;
+  border-radius: 5px;
 }
 .game-page-title {
-  margin-left: 110px;
+  margin-left: 140px;
 }
 
 .options-container {
   display: block;
 }
 .options-container button {
-  width: 250px;
+  width: 300px;
+  height: 100px;
+  padding: 10px 0;
+  margin: 10px;
 }
 .options-row {
   display: flex;
@@ -97,6 +102,9 @@ button:hover {
   display: block;
   margin: 30px auto;
   font-size: 20px;
+}
+.game-page {
+  padding: 10px 50px;
 }
 .start-page,
 .game-over {
