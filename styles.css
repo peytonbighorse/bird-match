@@ -15,9 +15,6 @@ body {
   font-family: sigmar-regular, Impact, "Arial Narrow Bold", sans-serif;
 }
 
-.about-and-credits {
-  text-align: center;
-}
 h1 {
   -webkit-text-stroke: 2px #684e1b;
   font-size: 100px;
@@ -28,7 +25,6 @@ h1 {
 h2 {
   -webkit-text-stroke: 2px #684e1b;
   font-size: 50px;
-  letter-spacing: 3px;
   margin: 0;
 }
 h3 {
@@ -39,6 +35,7 @@ h3 {
 }
 p {
   margin: 0 100px;
+  font-size: 25px;
   -webkit-text-stroke: 1px #684e1b;
   letter-spacing: 2px;
 }
@@ -98,11 +95,7 @@ button:hover {
 .credits-section a {
   color: #684e1b;
 }
-.exit-about-btn {
-  display: block;
-  margin: 30px auto;
-  font-size: 20px;
-}
+
 .game-page {
   padding: 10px 50px;
 }
@@ -122,6 +115,29 @@ button:hover {
   position: relative;
   top: 100px;
 }
+.exit-about-btn {
+  position: absolute;
+  font-size: 20px;
+  width: 200px;
+  left: 40px;
+}
+.about-and-credits {
+  margin: 50px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.about-and-credits h2 {
+  margin-bottom: 15px;
+}
+
+.about-and-credits div {
+  margin-bottom: 50px;
+  background-color: #e9dabd5d;
+  border-radius: 20px;
+  padding: 25px 0;
+}
+
 .hidden {
   display: none;
 }
