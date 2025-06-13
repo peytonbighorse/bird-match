@@ -130,6 +130,8 @@ let birdData = [
   },
 ];
 function loadBird() {
+  const gamePageSection = document.querySelector(".game-page");
+  const gameOverSection = document.querySelector(".game-over");
   //Keeps track of which bird you’re on
   let randomNum = Math.floor(Math.random() * birdData.length);
   let correctAnswer = birdData[randomNum].correctAnswer;
@@ -145,6 +147,7 @@ function loadBird() {
     button.style.backgroundColor = "#e9dabd";
     button.innerHTML = birdData[randomNum].options[optionsCounter];
     optionsCounter += 1;
+
     button.addEventListener("click", (event) => {
       showAnswer(button, correctAnswer);
     });
@@ -158,8 +161,12 @@ function loadBird() {
     modal.classList.add("hidden");
   }
 
+  //Remove bird from array and end game
   birdData.splice(randomNum, 1);
-  console.log(birdData);
+  if (birdData.length === 0) {
+    gameOverSection.classList.remove("hidden");
+    gamePageSection.classList.add("hidden");
+  }
 }
 //  Choice selection
 //Buttons
@@ -170,6 +177,7 @@ const optionButtons = document.querySelectorAll(".option-btn");
 function showModal(result) {
   let modal = document.querySelector(".modal");
   let userResult = document.querySelector(".result");
+
   if (result) {
     userResult.innerHTML = "Correct!";
     userResult.style.color = "green";
@@ -179,11 +187,10 @@ function showModal(result) {
   }
   modal.classList.remove("hidden");
 }
-
+let score = 0;
 function showAnswer(userChoice, correctChoice) {
   let num = 0;
-  console.log(userChoice.innerHTML);
-  console.log(correctChoice);
+  const scoreElement = document.querySelector(".score-counter-element");
   optionButtons.forEach((button) => {
     button.style.backgroundColor = "#e9dabd";
     button.style.color = "#4c4027";
@@ -191,6 +198,8 @@ function showAnswer(userChoice, correctChoice) {
   if (userChoice.innerHTML === correctChoice) {
     userChoice.style.backgroundColor = "green";
     userChoice.style.color = "#e9dabd";
+    score += 1;
+    scoreElement.innerHTML = score;
     showModal(true);
   } else {
     optionButtons.forEach(() => {
