@@ -43,6 +43,96 @@
 }
 
 //Gameplay
+let currentBird = 0;
+function loadBird() {
+  //Loads the next bird’s image
+  //Populates the answer buttons
+  //Updates the fact (store it for modal use)
+  //Keeps track of which bird you’re on
+}
+//birds array
+let birdData = [
+  {
+    name: "Steller's Jay",
+    image: "assets/bird-pics/stellers-jay.jfif",
+    correctAnswer: "STELLER'S JAY",
+    options: [
+      "BLUE JAY",
+      "STELLER'S JAY",
+      "NORTHERN CARDINAL",
+      "EURASIAN MAGPIE",
+    ],
+    tips: [
+      "Dark blue and black plumge with a crest",
+      "Small spots on forehead and near eyes",
+      "Broad, rounded wings",
+      "A harsh 'shack, shack, shack' sound",
+    ],
+  },
+  {
+    name: "Brown-headed Cowbird",
+    image: "assets/bird-pics/brown-headed-cowbird.jfif",
+    correctAnswer: "BROWN-HEADED COWBIRD",
+    options: ["BROWN-HEADED COWBIRD"],
+    tips: [],
+  },
+  {
+    name: "Cooper's Hawk",
+    image: "assets/bird-pics/coopers-hawk.jfif",
+    correctAnswer: "COOPER'S HAWK",
+    options: ["COOPER'S HAWK"],
+    tips: [],
+  },
+  {
+    name: "Dark-eyed Junco",
+    image: "assets/bird-pics/dark-eyed-junco",
+    correctAnswer: "DARK-EYED JUNCO",
+    options: ["DARK-EYED JUNCO"],
+    tips: [],
+  },
+  {
+    name: "Great Blue Heron",
+    image: "assets/bird-pics/great-blue-heron.jfif",
+    correctAnswer: "GREAT BLUE HERON",
+    options: ["GREAT BLUE HERON"],
+    tips: [],
+  },
+  {
+    name: "Northern Cardinal",
+    image: "assets/bird-pics/northern-cardinal.jfif",
+    correctAnswer: "NORTHERN CARDINAL",
+    options: ["NORTHERN CARDINAL"],
+    tips: [],
+  },
+  {
+    name: "Northern Flicker",
+    image: "assets/bird-pics/northern-flicker.jfif",
+    correctAnswer: "NORTHERN FLICKER",
+    options: ["NORTHERN FLICKER"],
+    tips: [],
+  },
+  {
+    name: "Osprey",
+    image: "assets/bird-pics/osprey.jfif",
+    correctAnswer: "OSPREY",
+    options: ["OSPREY"],
+    tips: [],
+  },
+  {
+    name: "Sandwich Tern",
+    image: "assets/bird-pics/sandwich-tern.jfif",
+    correctAnswer: "SANDWICH TERN",
+    options: ["SANDWICH TERN"],
+    tips: [],
+  },
+  {
+    name: "Scissor Tailed Flycatcher",
+    image: "assets/bird-pics/",
+    correctAnswer: "SCISSOR TAILED FLYCATCHER",
+    options: ["SCISSOR TAILED FLYCATCHER"],
+    tips: [],
+  },
+];
 
 //  Choice selection
 //Buttons
