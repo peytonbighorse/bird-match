@@ -88,9 +88,13 @@ button:hover {
   display: block;
 }
 .options-container button {
-  width: 300px;
-  height: 100px;
-  padding: 10px 0;
+  width: 12em;
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 10px;
   margin: 10px;
 }
 .options-row {
