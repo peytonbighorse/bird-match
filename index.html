@@ -7,16 +7,19 @@
     <title>Bird Match 🐦</title>
   </head>
   <body>
+    <!-- Start Page -->
     <section class="start-page">
       <h1 class="game-name-heading">BIRD MATCH</h1>
       <h3 class="highscore">
-        HIGH SCORE: <span class="highscore-element">100</span>
+        HIGH SCORE: <span class="main-page-highscore-element">0</span>
       </h3>
       <div class="btn-container">
         <button class="start-game-btn">START GAME</button>
         <button class="about-game-btn">ABOUT THE GAME</button>
       </div>
     </section>
+
+    <!-- Game Page -->
     <section class="game-page hidden">
       <header>
         <div class="score-box">
@@ -25,10 +28,11 @@
           </h3>
           <h3 class="game-page-title">BIRD MATCH</h3>
           <h3 class="highscore-tracker">
-            HIGH SCORE: <span class="highscore-tracker-element">100</span>
+            HIGH SCORE: <span class="highscore-element">0</span>
           </h3>
         </div>
       </header>
+
       <section class="bird-img">
         <img
           src="assets/bird-pics/stellers-jay.jfif"
@@ -36,6 +40,7 @@
           id="stellers-jay"
         />
       </section>
+
       <div class="options-container">
         <div class="options-row">
           <button class="option-btn">BLUE JAY</button>
@@ -47,13 +52,15 @@
         </div>
       </div>
     </section>
+
+    <!-- Game Over Page -->
     <section class="game-over hidden">
       <h1 class="game-over-heading">GAME OVER</h1>
       <h3 class="final-score">
-        SCORE: <span class="final-score-element">100</span>
+        SCORE: <span class="final-score-element"></span>
       </h3>
       <h3 class="highscore">
-        HIGH SCORE: <span class="highscore-1-element">100</span>
+        HIGH SCORE: <span class="final-highscore-element"></span>
       </h3>
       <div class="btn-container">
         <button class="play-again-btn">PLAY AGAIN</button>
@@ -61,8 +68,10 @@
       </div>
     </section>
 
+    <!-- About + Credits -->
     <section class="about-and-credits hidden">
       <button class="exit-about-btn">GO HOME</button>
+
       <div>
         <h2 class="about-section">ABOUT THE GAME</h2>
         <p>
@@ -71,6 +80,7 @@
           personal design and development project.
         </p>
       </div>
+
       <div>
         <h2 class="credits-section">CREDITS</h2>
         <p class="credits-section">
@@ -99,13 +109,16 @@
       </div>
     </section>
 
+    <!-- Modal -->
     <section class="modal hidden">
       <h2 class="result">Correct!</h2>
       <p>
-        What to look for: <br /><span class="birding-tip">Tip goes here</span>
+        What to look for: <br />
+        <span class="birding-tip">Tip goes here</span>
       </p>
       <button class="next-bird-btn">Next Bird</button>
     </section>
+
     <script src="script.js"></script>
   </body>
 </html>
