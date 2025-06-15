@@ -210,7 +210,7 @@ function resetGame() {
         "COMMON GRACKLE",
         "BRONZED COWBIRD",
       ],
-      tips: ["fake tip"],
+      tips: ["Males have a glossy brown head contrasting with a black body"],
       alt: "Brown-headed cowbird",
     },
     {
@@ -223,7 +223,10 @@ function resetGame() {
         "PEREGRINE FALCOLN",
         "AMERICAN GOSHAWK",
       ],
-      tips: ["fake tip"],
+      tips: [
+        "Look for the rounded tail and orange eyes—larger than a Sharp-shinned Hawk",
+      ],
+
       alt: "Cooper's Hawk",
     },
     {
@@ -236,7 +239,7 @@ function resetGame() {
         "BLACK PHOEBE",
         "SPOTTED TOWHEE",
       ],
-      tips: ["fake tip"],
+      tips: ["Flashes of white outer tail feathers when it flies"],
       alt: "Dark-eyed junco",
     },
     {
@@ -249,7 +252,9 @@ function resetGame() {
         "TRICOLORED HERON",
         "NIGHT HERON",
       ],
-      tips: ["fake tip"],
+      tips: [
+        "Huge wading bird with a long neck and dagger-like bill; often seen still as a statue",
+      ],
       alt: "Great blue heron",
     },
     {
@@ -262,7 +267,9 @@ function resetGame() {
         "SCARLET TANAGER",
         "VERMILION CARDINAL",
       ],
-      tips: ["fake tip"],
+      tips: [
+        "Often seen on the ground, with a spotted belly and a black crescent on the chest",
+      ],
       alt: "Northern cardinal",
     },
     {
@@ -283,7 +290,9 @@ function resetGame() {
       image: "assets/bird-pics/osprey.jfif",
       correctAnswer: "OSPREY",
       options: ["OSPREY", "RED-TAILED HAWK", "BALD EAGLE", "GOLDEN EAGLE"],
-      tips: ["fake tip"],
+      tips: [
+        "Dark brown back with white underparts and a distinctive black eye stripe",
+      ],
       alt: "Osprey soaring over body of water",
     },
     {
@@ -291,7 +300,9 @@ function resetGame() {
       image: "assets/bird-pics/sandwich-tern.jfif",
       correctAnswer: "SANDWICH TERN",
       options: ["COMMON TERN", "ROYAL TERN", "ELEGANT TERN", "SANDWICH TERN"],
-      tips: ["fake tip"],
+      tips: [
+        "Black cap and a long black bill with a yellow tip; often seen in coastal areas",
+      ],
       alt: "Sandwich tern",
     },
     {
@@ -304,7 +315,9 @@ function resetGame() {
         "FORK-TAILED FLYCATCHER",
         "EASTERN KINGBIRD",
       ],
-      tips: ["fake tip"],
+      tips: [
+        "Exceptionally long tail feathers that open and close like scissors during flight",
+      ],
       alt: "Scissor tailed flycatcher perched on a fence",
     },
   ];
