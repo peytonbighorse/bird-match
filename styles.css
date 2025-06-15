@@ -178,7 +178,8 @@ button:hover {
   line-height: 1.2;
 }
 
-.next-bird-btn {
+.next-bird-btn,
+.game-over-btn {
   font-size: 20px;
   width: fit-content;
   padding: 10px 20px;

@@ -9,7 +9,6 @@
 //  5a. updateScore() - update score and score elements
 //  5b. resetQuestion() - reset styles, modals
 //  5c. displayBird() - show data from birdData, populate options buttons
-//  5d. endGame() - hide game page, show game over screen, reset game variables
 
 //Game State Variables
 let highscore = 0;
@@ -24,6 +23,7 @@ const aboutPageSection = document.querySelector(".about-and-credits");
 
 //DOM Elements
 const optionButtons = document.querySelectorAll(".option-btn");
+const modal = document.querySelector(".modal");
 
 //Buttons
 const startGameBtn = document.querySelector(".start-game-btn");
@@ -32,6 +32,7 @@ const exitAboutBtn = document.querySelector(".exit-about-btn");
 const playAgainBtn = document.querySelector(".play-again-btn");
 const homescreenBtn = document.querySelector(".home-btn");
 const nextBirdBtn = document.querySelector(".next-bird-btn");
+const gameOverBtn = document.querySelector(".game-over-btn");
 
 //Core Functions
 optionButtons.forEach((button) => {
@@ -40,39 +41,43 @@ optionButtons.forEach((button) => {
   });
 });
 
-function loadBird() {
-  let randomNum = Math.floor(Math.random() * birdData.length);
-  currentCorrectAnswer = birdData[randomNum].correctAnswer;
-
+function displayBird(bird) {
   //Load bird image
   let birdImageElement = document.querySelector(".bird-img");
-  birdImageElement.innerHTML = `<img src="${birdData[randomNum].image}" alt="${birdData[randomNum].alt}" id="${birdData[randomNum].name}" style="width:320px; height:240px"/>`;
+  birdImageElement.innerHTML = `<img src="${bird.image}" alt="${bird.alt}" id="${bird.name}" style="width:320px; height:240px"/>`;
 
   //Populates the answer buttons
 
   let optionsCounter = 0;
   optionButtons.forEach((button) => {
-    currentCorrectAnswer = birdData[randomNum].correctAnswer;
+    currentCorrectAnswer = bird.correctAnswer;
     button.style.color = "#4c4027";
     button.style.backgroundColor = "#e9dabd";
-    button.innerHTML = birdData[randomNum].options[optionsCounter];
+    button.innerHTML = bird.options[optionsCounter];
     optionsCounter += 1;
   });
   //Update the birding tip
-  let birdingTip = document.querySelector(".birding-tip");
-  birdingTip.innerHTML = birdData[randomNum].tips[0];
+  const birdingTip = document.querySelector(".birding-tip");
+  birdingTip.innerHTML = bird.tips[0];
 
-  let modal = document.querySelector(".modal");
   if (!modal.classList.contains("hidden")) {
     modal.classList.add("hidden");
   }
+}
 
-  //Remove bird from array and end game
-  birdData.splice(randomNum, 1);
-  if (birdData.length === 0) {
-    gameOverSection.classList.remove("hidden");
-    gamePageSection.classList.add("hidden");
+function loadBird() {
+  const randomNum = Math.floor(Math.random() * birdData.length);
+  const currentBird = birdData[randomNum];
+  currentCorrectAnswer = currentBird.correctAnswer;
+
+  if (birdData.length === 1) {
+    displayBird(currentBird);
+    birdData.splice(randomNum, 1);
+    return;
   }
+
+  displayBird(currentBird);
+  birdData.splice(randomNum, 1);
 }
 
 function showModal(result) {
@@ -98,36 +103,48 @@ function showAnswer(userChoice, correctChoice) {
   const mainHighscore = document.querySelector(".main-page-highscore-element");
   const scoreElement = document.querySelector(".score-counter-element");
   const finalScoreElement = document.querySelector(".final-score-element");
+
   optionButtons.forEach((button) => {
     button.style.backgroundColor = "#e9dabd";
     button.style.color = "#4c4027";
   });
-  if (userChoice.innerHTML === correctChoice) {
+  /////////
+  const isCorrect = userChoice.innerHTML === correctChoice;
+
+  if (isCorrect) {
     userChoice.style.backgroundColor = "green";
     userChoice.style.color = "#e9dabd";
     score += 1;
-
-    scoreElement.innerHTML = score;
-    showModal(true);
-    if (score > highscore) {
-      highscore = score;
-      highscoreElement.innerHTML = highscore;
-    }
   } else {
     optionButtons.forEach(() => {
       if (optionButtons[num].innerHTML === correctChoice) {
         optionButtons[num].style.backgroundColor = "green";
         optionButtons[num].style.color = "#e9dabd";
       }
-      showModal(false);
       num += 1;
     });
     userChoice.style.backgroundColor = "red";
     userChoice.style.color = "#e9dabd";
   }
+  if (score > highscore) {
+    highscore = score;
+  }
+
+  //Update scores
+  highscoreElement.innerHTML = highscore;
+  scoreElement.innerHTML = score;
   finalScoreElement.innerHTML = score;
   finalHighscoreElement.innerHTML = highscore;
   mainHighscore.innerHTML = highscore;
+
+  //display modal
+  if (birdData.length > 0) {
+    showModal(isCorrect);
+  } else {
+    nextBirdBtn.classList.add("hidden");
+    gameOverBtn.classList.remove("hidden");
+    showModal(isCorrect);
+  }
 }
 
 //Nav Functions
@@ -162,6 +179,8 @@ function resetGame() {
   const scoreElement = document.querySelector(".score-counter-element");
   score = 0;
   scoreElement.innerHTML = 0;
+  nextBirdBtn.classList.remove("hidden");
+  gameOverBtn.classList.add("hidden");
   birdData = [
     {
       name: "stellers-jay",
@@ -291,6 +310,14 @@ function resetGame() {
   ];
 }
 
+function endGame() {
+  if (!modal.classList.contains("hidden")) {
+    modal.classList.add("hidden");
+  }
+  gameOverSection.classList.remove("hidden");
+  gamePageSection.classList.add("hidden");
+}
+
 //Event Listeners
 startGameBtn.addEventListener("click", startGame);
 aboutGameBtn.addEventListener("click", showAboutSection);
@@ -298,3 +325,4 @@ exitAboutBtn.addEventListener("click", goHome);
 playAgainBtn.addEventListener("click", startGame);
 homescreenBtn.addEventListener("click", goHome);
 nextBirdBtn.addEventListener("click", loadBird);
+gameOverBtn.addEventListener("click", endGame);
