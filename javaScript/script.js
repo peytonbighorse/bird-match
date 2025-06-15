@@ -2,7 +2,7 @@
 //🌞 1. Score adds 1, then 2, then 3, etc. after each round
 //🌞 2. only cycles through 9 of 10 birds in birdData array
 //🌞 3. Need to fix styling so sizing of elements changes with size of screen
-//  3a. Scissor-tailed fly catcher options button overflows outside of button
+//🌞 3a. Scissor-tailed fly catcher options button overflows outside of button
 //  3b. Want font to get smaller - not squished when changing screen size
 //4. Move birdData to anotehr file
 //5. Separate concerns:
@@ -44,7 +44,7 @@ optionButtons.forEach((button) => {
 function displayBird(bird) {
   //Load bird image
   let birdImageElement = document.querySelector(".bird-img");
-  birdImageElement.innerHTML = `<img src="${bird.image}" alt="${bird.alt}" id="${bird.name}" style="width:320px; height:240px"/>`;
+  birdImageElement.innerHTML = `<img src="${bird.image}" alt="${bird.alt}" id="${bird.name}" style="width:clamp(200px, 40vw, 320px); height:auto"/>`;
 
   //Populates the answer buttons
 

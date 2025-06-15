@@ -18,32 +18,32 @@ body {
 
 h1 {
   -webkit-text-stroke: 2px #684e1b;
-  font-size: 100px;
+  font-size: clamp(2rem, 8vw, 6.25rem);
   letter-spacing: 3px;
   margin: 0;
 }
 
 h2 {
   -webkit-text-stroke: 2px #684e1b;
-  font-size: 50px;
+  font-size: clamp(1.5rem, 5vw, 3rem);
   margin: 0;
 }
 h3 {
   -webkit-text-stroke: 1px #684e1b;
-  font-size: 45px;
+  font-size: clamp(1.3rem, 4.5vw, 2.8rem);
   letter-spacing: 2px;
   margin: 0;
 }
 p {
   margin: 0 100px;
-  font-size: 25px;
+  font-size: clamp(1.3rem, 4.5vw, 2.8rem);
   -webkit-text-stroke: 1px #684e1b;
   letter-spacing: 2px;
 }
 button {
   display: block;
   font-family: sigmar-regular, Impact, "Arial Narrow Bold", sans-serif;
-  font-size: 30px;
+  font-size: clamp(1rem, 3vw, 1.8rem);
   letter-spacing: 2px;
   color: #4c4027;
   background-color: #e9dabd;
@@ -51,7 +51,7 @@ button {
   border-radius: 10px;
   margin: 0 auto;
   margin-bottom: 15px;
-  width: 350px;
+  width: clamp(200px, 50vw, 350px);
   padding: 10px 0;
   transition: all 200ms ease-in-out;
 }
@@ -67,21 +67,28 @@ button:hover {
   background-color: #684e1b;
   border: 5px solid #4c4027;
   border-radius: 5px;
-  padding: 0 10px;
+  padding: clamp(0.5rem, 2vw, 1.5rem);
+}
+
+.score-box h3 {
+  -webkit-text-stroke: 1px #684e1b;
+  font-size: clamp(0.1rem, 3vw, 3rem);
+  letter-spacing: 2px;
+  margin: 0;
+}
+.score-counter {
+  color: #fcad91;
 }
 
 .bird-img {
-  width: 320px;
-  height: 240px;
+  width: clamp(200px, 40vw, 320px);
+  height: auto;
   display: block;
   margin: 50px auto;
   padding: 15px;
   background-color: #e9dabd;
-  border: 5px solid #4c4027;
+  border: 3px solid #4c4027;
   border-radius: 5px;
-}
-.game-page-title {
-  margin-left: 140px;
 }
 
 .options-container {
@@ -125,19 +132,17 @@ button:hover {
   top: 100px;
 }
 .exit-about-btn {
-  position: absolute;
-  font-size: 20px;
-  width: 200px;
-  left: 50px;
+  font-size: clamp(0.9rem, 2.5vw, 1.3rem);
+  width: clamp(100px, 50vw, 200px);
 }
 .about-and-credits {
-  margin: 50px auto;
-  max-width: 60vw;
+  margin: 0 auto;
+  max-width: clamp(300px, 90vw, 800px);
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   box-sizing: border-box;
-  padding: 20px 50px;
+  padding: clamp(1rem, 5vw, 3rem);
 }
 
 .about-and-credits h2 {
@@ -151,7 +156,7 @@ button:hover {
   padding: 25px 0;
 }
 .about-and-credits p {
-  font-size: 20px;
+  font-size: clamp(0.9rem, 2.5vw, 1.3rem);
 }
 
 .modal {
@@ -160,31 +165,29 @@ button:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 30vh;
-  width: 100vw;
-  max-width: 600px;
+  height: clamp(150px, 40vw, 300px);
+  width: clamp(250px, 80vw, 600px);
+  padding: clamp(1rem, 4vw, 2rem);
   background: #e9dabd9e;
   border-radius: 10px;
-  padding: 30px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-
   display: flex;
   flex-direction: column;
 }
 .modal h2 {
   -webkit-text-stroke: 2px rgba(57, 57, 57, 0.607);
-  font-size: 50px;
+  font-size: clamp(2rem, 2.5vw, 1.6rem);
   margin: 0 0 10px 0;
 }
 .modal p {
-  font-size: 25px;
+  font-size: clamp(1.5rem, 2vw, 3rem);
   margin: 10px 20px 20px 20px;
   line-height: 1.2;
 }
 
 .next-bird-btn,
 .game-over-btn {
-  font-size: 20px;
+  font-size: clamp(0.9rem, 2.5vw, 1.3rem);
   width: fit-content;
   padding: 10px 20px;
   margin: auto auto 0 auto;
