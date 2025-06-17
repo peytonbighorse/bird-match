@@ -212,6 +212,11 @@ button:hover {
   .credits-section-paragraph {
     text-align: left;
     margin: 5vw;
+    font-size: 0.85rem;
+  }
+
+  .credits-section {
+    font-size: 0.85rem;
   }
 
   .modal p {
