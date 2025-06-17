@@ -100,8 +100,8 @@ let birdData = [
       "NORTHERN FLICKER",
       "GILA WOODPECKER",
     ],
-    tips: ["fake tip"],
-    alt: "Norther flicker",
+    tips: ["Black bars on the back and a white rump that flashes as it flies"],
+    alt: "Northern flicker",
   },
   {
     name: "osprey",

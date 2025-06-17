@@ -108,10 +108,14 @@ button:hover {
   display: flex;
   justify-content: center;
 }
-.credits-section a {
+.credits-section-paragraph a {
   color: #684e1b;
+  transition: all 200ms ease-in-out;
 }
 
+.credits-section-paragraph a:hover {
+  color: #16a853;
+}
 .game-page {
   padding: 10px 50px;
 }
@@ -195,4 +199,24 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 600px) {
+  .about-section,
+  .credits-section {
+    margin: 5vw;
+  }
+
+  .about-section-paragraph,
+  .credits-section-paragraph {
+    text-align: left;
+    margin: 5vw;
+  }
+
+  .modal p {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+  }
+  .option-btn {
+    font-size: 0.85rem;
+  }
 }
