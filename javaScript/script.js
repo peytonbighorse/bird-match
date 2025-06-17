@@ -1,15 +1,3 @@
-//Notes and To-Dos
-//🌞 1. Score adds 1, then 2, then 3, etc. after each round
-//🌞 2. only cycles through 9 of 10 birds in birdData array
-//🌞 3. Need to fix styling so sizing of elements changes with size of screen
-//🌞 3a. Scissor-tailed fly catcher options button overflows outside of button
-//  3b. Want font to get smaller - not squished when changing screen size
-//4. Move birdData to anotehr file
-//5. Separate concerns:
-//  5a. updateScore() - update score and score elements
-//  5b. resetQuestion() - reset styles, modals
-//  5c. displayBird() - show data from birdData, populate options buttons
-
 //Game State Variables
 let highscore = 0;
 let score = 0;
