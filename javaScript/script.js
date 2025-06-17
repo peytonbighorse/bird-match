@@ -29,20 +29,22 @@ optionButtons.forEach((button) => {
   });
 });
 
+function shuffleArray(array) {
+  return array.sort(() => Math.random() - 0.5);
+}
+
 function displayBird(bird) {
   //Load bird image
   let birdImageElement = document.querySelector(".bird-img");
   birdImageElement.innerHTML = `<img src="${bird.image}" alt="${bird.alt}" id="${bird.name}" style="width:clamp(200px, 40vw, 320px); height:auto"/>`;
 
   //Populates the answer buttons
-
-  let optionsCounter = 0;
-  optionButtons.forEach((button) => {
+  let shuffledOptions = shuffleArray([...bird.options]);
+  optionButtons.forEach((button, i) => {
     currentCorrectAnswer = bird.correctAnswer;
     button.style.color = "#4c4027";
     button.style.backgroundColor = "#e9dabd";
-    button.innerHTML = bird.options[optionsCounter];
-    optionsCounter += 1;
+    button.innerHTML = shuffledOptions[i];
   });
   //Update the birding tip
   const birdingTip = document.querySelector(".birding-tip");
