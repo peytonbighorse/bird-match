@@ -40,15 +40,18 @@ function displayBird(bird) {
 
   //Populates the answer buttons
   let shuffledOptions = shuffleArray([...bird.options]);
+
   optionButtons.forEach((button, i) => {
     currentCorrectAnswer = bird.correctAnswer;
     button.style.color = "#4c4027";
     button.style.backgroundColor = "#e9dabd";
     button.innerHTML = shuffledOptions[i];
   });
-  //Update the birding tip
+
+  //Shuffle and populate tips
   const birdingTip = document.querySelector(".birding-tip");
-  birdingTip.innerHTML = bird.tips[0];
+  let shuffledTips = shuffleArray([...bird.tips]);
+  birdingTip.innerHTML = shuffledTips[0];
 
   if (!modal.classList.contains("hidden")) {
     modal.classList.add("hidden");

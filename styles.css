@@ -102,7 +102,7 @@ button:hover {
   justify-content: center;
   text-align: center;
   padding: 10px 10px;
-  margin: 10px;
+  margin: 5px;
 }
 .options-row {
   display: flex;
@@ -110,6 +110,7 @@ button:hover {
 }
 figcaption {
   line-height: -1;
+  font-size: clamp(0.6rem, 2vw, 1rem);
 }
 .credits-section-paragraph a,
 .bird-img-caption a {
@@ -154,10 +155,6 @@ figcaption {
   padding: clamp(1rem, 5vw, 3rem);
 }
 
-.about-and-credits h2 {
-  margin-bottom: 15px;
-}
-
 .about-and-credits div {
   margin-bottom: 50px;
   background-color: #e9dabd5d;
@@ -165,7 +162,7 @@ figcaption {
   padding: 25px 0;
 }
 .about-and-credits p {
-  font-size: clamp(0.9rem, 2.5vw, 1.3rem);
+  font-size: clamp(0.75rem, 2.5vw, 1.3rem);
 }
 
 .modal {
@@ -209,25 +206,26 @@ figcaption {
 @media (max-width: 600px) {
   .about-section,
   .credits-section {
-    margin: 5vw;
+    margin: 0;
     overflow: auto;
   }
 
   .about-section-paragraph,
   .credits-section-paragraph {
     text-align: left;
-    margin: 5vw;
-    font-size: 0.85rem;
+    margin: 1vw 5vw;
   }
-
-  .credits-section {
-    font-size: 0.85rem;
+  .next-bird-btn {
+    font-size: clamp(0.7rem, 2.5vw, 1.3rem);
+    padding: 8px 10px;
+    margin-bottom: 10px;
   }
-
   .modal p {
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-size: clamp(0.75rem, 2vw, 1.5rem);
+    margin: 1.5vw;
   }
   .option-btn {
-    font-size: 0.85rem;
+    font-size: clamp(0.6rem, 2.5vw, 1.3rem);
+    padding: 20px !important;
   }
 }

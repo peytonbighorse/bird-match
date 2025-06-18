@@ -129,12 +129,7 @@ let birdData = [
     image: "assets/bird-pics/canada-goose.jpg",
     imageCredit: `<a href="https://commons.wikimedia.org/wiki/File:20231208_canada_goose_goodwin_dock_PD101660.jpg" target="_blank" rel="noopener noreferrer">Paul Danese</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>, via Wikimedia Commons`,
     correctAnswer: "CANADA GOOSE",
-    options: [
-      "CANADA GOOSE",
-      "CACKLING GOOSE",
-      "GREATER WHITE-FRONTED GOOSE",
-      "SNOW GOOSE",
-    ],
+    options: ["CANADA GOOSE", "CACKLING GOOSE", "BRANT", "SNOW GOOSE"],
     tips: [
       "A large brown goose with a black neck and white chinstrap (eBird)",
       "Occurs in any open or wetland habitat, from city parks and golf courses to pristine marshes and Arctic tundra (eBird)",
@@ -165,7 +160,7 @@ let birdData = [
   {
     name: "coopers-hawk",
     image: "assets/bird-pics/coopers-hawk.jpg",
-    imageCredit: `<a href="https://commons.wikimedia.org/wiki/File:Juvenile_cooper%27s_hawk.jpg" target="_blank" rel="noopener noreferrer">https://www.flickr.com/people/sherseydc/</a>, <a href="https://creativecommons.org/licenses/by-sa/1.0" target="_blank" rel="noopener noreferrer">CC BY-SA 1.0</a>, via Wikimedia Commons`,
+    imageCredit: `<a href="https://commons.wikimedia.org/wiki/File:Cooper%27s_hawk_in_Prospect_Park_(22502).jpg" target="_blank" rel="noopener noreferrer">Rhododendrites</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>, via Wikimedia Commons`,
     correctAnswer: "COOPER'S HAWK",
     options: [
       "COOPER'S HAWK",
@@ -445,10 +440,10 @@ let birdData = [
       "COMMON GRACKLE",
     ],
     tips: [
-      "Most common roadside raptor across much of North America (eBird)",
-      "Often perches atop telephone poles, light posts, and edges of trees (eBird)",
-      "Eastern adults have brilliant reddish-orange tail and pale underparts with obvious band of dark marks across belly (eBird)",
-      "Western birds are typically darker (eBird)",
+      "Males are black with red shoulder patch that is sometimes concealed, with e rusty feather edges in the winter (eBird)",
+      "Females are streaked brown and often confused with sparrows (eBird)",
+      "Long, sharply pointed bill (eBird)",
+      "Breeds in marshes and scrubby, wet fields (eBird)",
     ],
     alt: "Red-winged blackbird perched on branches",
   },
@@ -685,12 +680,7 @@ let resetBirdData = [
     image: "assets/bird-pics/canada-goose.jpg",
     imageCredit: `<a href="https://commons.wikimedia.org/wiki/File:20231208_canada_goose_goodwin_dock_PD101660.jpg" target="_blank" rel="noopener noreferrer">Paul Danese</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>, via Wikimedia Commons`,
     correctAnswer: "CANADA GOOSE",
-    options: [
-      "CANADA GOOSE",
-      "CACKLING GOOSE",
-      "GREATER WHITE-FRONTED GOOSE",
-      "SNOW GOOSE",
-    ],
+    options: ["CANADA GOOSE", "CACKLING GOOSE", "BRANT", "SNOW GOOSE"],
     tips: [
       "A large brown goose with a black neck and white chinstrap (eBird)",
       "Occurs in any open or wetland habitat, from city parks and golf courses to pristine marshes and Arctic tundra (eBird)",
@@ -721,7 +711,7 @@ let resetBirdData = [
   {
     name: "coopers-hawk",
     image: "assets/bird-pics/coopers-hawk.jpg",
-    imageCredit: `<a href="https://commons.wikimedia.org/wiki/File:Juvenile_cooper%27s_hawk.jpg" target="_blank" rel="noopener noreferrer">https://www.flickr.com/people/sherseydc/</a>, <a href="https://creativecommons.org/licenses/by-sa/1.0" target="_blank" rel="noopener noreferrer">CC BY-SA 1.0</a>, via Wikimedia Commons`,
+    imageCredit: `<a href="https://commons.wikimedia.org/wiki/File:Cooper%27s_hawk_in_Prospect_Park_(22502).jpg" target="_blank" rel="noopener noreferrer">Rhododendrites</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>, via Wikimedia Commons`,
     correctAnswer: "COOPER'S HAWK",
     options: [
       "COOPER'S HAWK",
@@ -1001,10 +991,10 @@ let resetBirdData = [
       "COMMON GRACKLE",
     ],
     tips: [
-      "Most common roadside raptor across much of North America (eBird)",
-      "Often perches atop telephone poles, light posts, and edges of trees (eBird)",
-      "Eastern adults have brilliant reddish-orange tail and pale underparts with obvious band of dark marks across belly (eBird)",
-      "Western birds are typically darker (eBird)",
+      "Males are black with red shoulder patch that is sometimes concealed, with e rusty feather edges in the winter (eBird)",
+      "Females are streaked brown and often confused with sparrows (eBird)",
+      "Long, sharply pointed bill (eBird)",
+      "Breeds in marshes and scrubby, wet fields (eBird)",
     ],
     alt: "Red-winged blackbird perched on branches",
   },
