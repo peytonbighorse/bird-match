@@ -172,7 +172,7 @@ button:hover {
   height: clamp(150px, 40vw, 300px);
   width: clamp(250px, 80vw, 600px);
   padding: clamp(1rem, 4vw, 2rem);
-  background: #e9dabd9e;
+  background: #e9dabdd8;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   display: flex;

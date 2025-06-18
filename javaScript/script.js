@@ -139,7 +139,6 @@ function showAnswer(userChoice, correctChoice) {
 
 //Nav Functions
 function startGame() {
-  resetGame();
   loadBird();
   !startPageSection.classList.contains("hidden")
     ? startPageSection.classList.add("hidden")
@@ -272,7 +271,9 @@ function resetGame() {
         "NORTHERN FLICKER",
         "GILA WOODPECKER",
       ],
-      tips: ["fake tip"],
+      tips: [
+        "Black bars on the back and a white rump that flashes as it flies",
+      ],
       alt: "Norther flicker",
     },
     {

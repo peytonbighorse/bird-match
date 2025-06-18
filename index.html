@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Bird Match 🐦</title>
   </head>
@@ -33,13 +34,7 @@
         </div>
       </header>
 
-      <section class="bird-img">
-        <img
-          src="assets/bird-pics/stellers-jay.jfif"
-          alt="steller's jay perched on a tree branch"
-          id="stellers-jay"
-        />
-      </section>
+      <section class="bird-img"></section>
 
       <div class="options-container">
         <div class="options-row">
@@ -120,6 +115,7 @@
       <button class="game-over-btn hidden">Game Over</button>
     </section>
 
+    <script src="javaScript/ebirdData.js"></script>
     <script src="javaScript/birdData.js"></script>
     <script src="javaScript/script.js"></script>
   </body>
