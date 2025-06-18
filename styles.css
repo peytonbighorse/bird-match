@@ -108,12 +108,17 @@ button:hover {
   display: flex;
   justify-content: center;
 }
-.credits-section-paragraph a {
+figcaption {
+  line-height: -1;
+}
+.credits-section-paragraph a,
+.bird-img-caption a {
   color: #684e1b;
   transition: all 200ms ease-in-out;
 }
 
-.credits-section-paragraph a:hover {
+.credits-section-paragraph a:hover,
+.bird-img-caption a:hover {
   color: #16a853;
 }
 .game-page {
