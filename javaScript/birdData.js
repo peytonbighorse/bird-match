@@ -19,6 +19,7 @@ let birdData = [
       "Common across North America in gardens, parks, yards, golf courses, fields, pastures, and many other wooded habitats (eBird)",
     ],
     alt: "American robin standing in grass",
+    region: [],
   },
   {
     name: "barn-swallow",
@@ -33,6 +34,7 @@ let birdData = [
       "Occurs in any open habitat, especially large fields and wetlands, often seen foraging in flocks (eBird)",
     ],
     alt: "Barn swallow perched on a wire",
+    region: [],
   },
   {
     name: "belted-kingfisher",
@@ -52,6 +54,7 @@ let birdData = [
       "Females have additional rusty band across belly (eBird)",
     ],
     alt: "Belted kingfisher perched on branch",
+    region: [],
   },
   {
     name: "black-capped-chickadee",
@@ -71,6 +74,7 @@ let birdData = [
       "Nearly identical to Carolina Chickadee, but range barely overlaps (eBird)",
     ],
     alt: "Black-capped chickadee perched in branches of a tree",
+    region: [],
   },
   {
     name: "blue-jay",
@@ -85,6 +89,7 @@ let birdData = [
       "Frequently visits bird feeders, where it is often aggressive towards other birds (eBird)",
     ],
     alt: "Blue jay perched in a tree",
+    region: [],
   },
   {
     name: "brown-headed-cowbird",
@@ -104,6 +109,7 @@ let birdData = [
       "Forages by walking on the ground (eBird)",
     ],
     alt: "Brown-headed cowbird on branch",
+    region: [],
   },
   {
     name: "brown-thrasher",
@@ -123,6 +129,27 @@ let birdData = [
       "Most similar to Long-billed Thrasher, but almost no range overlap (eBird)",
     ],
     alt: "Brown thrasher standing in snow",
+    region: [],
+  },
+  {
+    name: "california-towhee",
+    image: "assets/bird-pics/california-towhee.jpg",
+    imageCredit: `<a href="https://commons.wikimedia.org/wiki/File:Melozone_crissalis_103257560.jpg" target="_blank" rel="noopener noreferrer">Dario</a>, CC0, via Wikimedia Commons`,
+    correctAnswer: "CALIFORNIA TOWHEE",
+    options: [
+      "CALIFORNIA TOWHEE",
+      "CANYON TOWHEE",
+      "RUFOUS-CROWNED SPARROW",
+      "SPOTTED TOWHEE",
+    ],
+    tips: [
+      "Large, stocky, long-tailed sparrow (eBird)",
+      "Uniform matte brown, with rich cinnamon tones on face and orange undertail coverts (eBird)",
+      "Limited streaking on upper breast with no central spot (eBird)",
+      "Occurs in chaparral and other tangled shrubby, dry habitats (eBird)",
+    ],
+    alt: "California towhee perched on log",
+    region: [],
   },
   {
     name: "canada-goose",
@@ -137,6 +164,7 @@ let birdData = [
       "Listen for loud honking calls, especially as flocks migrate overhead in the classic V formation (eBird)",
     ],
     alt: "Canada goose swimming",
+    region: [],
   },
   {
     name: "cedar-waxwing",
@@ -156,6 +184,7 @@ let birdData = [
       "Often gathers in large flocks, especially around fruiting trees (eBird)",
     ],
     alt: "Cedar waxwing perched on branch",
+    region: [],
   },
   {
     name: "coopers-hawk",
@@ -174,8 +203,8 @@ let birdData = [
       "Very similar to Sharp-shinned Hawk, but larger with bigger head and deeper, slower wingbeats (eBird)",
       "Often stalks feeders in search of prey (eBird)",
     ],
-
     alt: "Cooper's hawk perched on branch in park",
+    region: [],
   },
   {
     name: "dark-eyed-junco",
@@ -195,6 +224,7 @@ let birdData = [
       "Usually forages on the ground for seeds, but also fond of brushy thickets or weedy fields (eBird)",
     ],
     alt: "Dark-eyed Junco perched on gravestone",
+    region: [],
   },
   {
     name: "downy-woodpecker",
@@ -214,6 +244,7 @@ let birdData = [
       "Familiar visitor to backyard feeders, especially fond of suet (eBird)",
     ],
     alt: "Downy woodpecker perched on tree branch",
+    region: [],
   },
   {
     name: "eastern-bluebird",
@@ -233,6 +264,7 @@ let birdData = [
       "Frequently perches on wires or fence posts (eBird)",
     ],
     alt: "Eastern bluebird perched on fence post",
+    region: [],
   },
   {
     name: "european-starling",
@@ -252,6 +284,7 @@ let birdData = [
       "Visits feeders, where it is often aggressive towards other birds (eBird)",
     ],
     alt: "European starling in grass",
+    region: [],
   },
   {
     name: "great-blue-heron",
@@ -271,6 +304,27 @@ let birdData = [
       "Occurs in almost any wetland habitat, from small ponds to marshes to saltwater bays (eBird)",
     ],
     alt: "Great blue heron standing in lake",
+    region: [],
+  },
+  {
+    name: "hooded-oriole",
+    image: "assets/bird-pics/hooded-oriole.jpg",
+    imageCredit: `<a href="https://commons.wikimedia.org/wiki/File:Black-hooded_Oriole_by_Tisha_Mukherjee_14.jpg" target="_blank" rel="noopener noreferrer">Tisha Mukherjee</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>, via Wikimedia Commons`,
+    correctAnswer: "HOODED ORIOLE",
+    options: [
+      "HOODED ORIOLE",
+      "BULLOCK'S ORIOLE",
+      "CASSIN'S FINCH",
+      "PINE SISKIN",
+    ],
+    tips: [
+      "Rather slender, long-tailed oriole (eBird)",
+      "Adult males are orange with a black mask and throat and obvious white shoulder patch (eBird)",
+      "Females are dull yellow with a grayish wash on the upperparts and sides (eBird)",
+      "Often seen in parks and neighborhoods, with an affinity for palm trees (eBird)",
+    ],
+    alt: "Hooded oriole perched near nest in tree",
+    region: [],
   },
   {
     name: "house-finch",
@@ -285,6 +339,7 @@ let birdData = [
       "Pale sides show distinct brown streaks, lacking red tones (eBird)",
     ],
     alt: "House finch perched on branch",
+    region: [],
   },
   {
     name: "killdeer",
@@ -304,6 +359,7 @@ let birdData = [
       "Can be very vocal; listen for loud namesake “kill-deer” call (eBird)",
     ],
     alt: "Killdeer on rocky beach",
+    region: [],
   },
   {
     name: "mallard",
@@ -318,6 +374,7 @@ let birdData = [
       "Any bird with extensive white in the tail or curled feathers above the tail has some Mallard genes (eBird)",
     ],
     alt: "Mallard standing on shore",
+    region: [],
   },
   {
     name: "mourning-dove",
@@ -337,6 +394,7 @@ let birdData = [
       "Listen for distinctive cooing song and whistling wings as it takes off (eBird)",
     ],
     alt: "Mourning dove perched on fence",
+    region: [],
   },
   {
     name: "northern-cardinal",
@@ -356,6 +414,7 @@ let birdData = [
       "Listen for high-pitched metallic chips and series of loud, sweet whistles (eBird)",
     ],
     alt: "Northern cardinal perched on fence",
+    region: [],
   },
   {
     name: "northern-flicker",
@@ -375,6 +434,7 @@ let birdData = [
       "Wings and tail flash yellow or red, depending on the subspecies (eBird)",
     ],
     alt: "Northern flicker perched in tree",
+    region: [],
   },
   {
     name: "northern-mockingbird",
@@ -394,6 +454,7 @@ let birdData = [
       "Well-known for its impressive mimicry; often includes a wide range of other birds, car alarms, slamming doors, and other mechanical noises in its song (eBird)",
     ],
     alt: "Northern mockingbird perched on branch",
+    region: [],
   },
   {
     name: "osprey",
@@ -408,6 +469,7 @@ let birdData = [
       "Often seen plunging feet-first into water from high in the air to grab fish (eBird)",
     ],
     alt: "Osprey perched on branch",
+    region: [],
   },
   {
     name: "red-tailed-hawk",
@@ -427,6 +489,7 @@ let birdData = [
       "Western birds are typically darker (eBird)",
     ],
     alt: "Juvenile red-tailed hawk in field of grass",
+    region: [],
   },
   {
     name: "red-winged-blackbird",
@@ -446,6 +509,7 @@ let birdData = [
       "Breeds in marshes and scrubby, wet fields (eBird)",
     ],
     alt: "Red-winged blackbird perched on branches",
+    region: [],
   },
   {
     name: "sandwich-tern",
@@ -460,6 +524,7 @@ let birdData = [
       "Harsh grating calls similar to other terns (eBird)",
     ],
     alt: "Sandwich tern perched on rock in water",
+    region: [],
   },
   {
     name: "scissor-tailed-flycatcher",
@@ -479,6 +544,7 @@ let birdData = [
       "Often seen on fenceposts and utility wires (eBird)",
     ],
     alt: "Scissor-tailed flycatcher perched on branch",
+    region: [],
   },
   {
     name: "stellers-jay",
@@ -498,6 +564,7 @@ let birdData = [
       "Loud and conspicuous; listen for harsh calls (eBird)",
     ],
     alt: "Steller's jay perched on fence",
+    region: [],
   },
   {
     name: "white-breasted-nuthatch",
@@ -517,6 +584,7 @@ let birdData = [
       "Creeps along tree trunks and branches, often upside-down (eBird)",
     ],
     alt: "White-breasted nuthatch perched on rock",
+    region: [],
   },
   {
     name: "yellow-rumped-warbler",
@@ -536,6 +604,7 @@ let birdData = [
       "Most 'Audubon’s' have a yellow throat, but dull immature females can be off-white, while 'Myrtle' Warblers have a white throat that wraps around below the cheek (eBird)",
     ],
     alt: "Yellow-rumped warbler perched on branch",
+    region: [],
   },
 ];
 
@@ -548,6 +617,7 @@ let birdData = [
     options: [],
     tips: [" (eBird)"," (eBird)"," (eBird)"," (eBird)"],
     alt: "",
+    region: [],
   },
   */
 
