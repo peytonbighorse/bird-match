@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bird Match 🐦</title>
+  </head>
+  <body>
+    <!-- Start Page -->
+    <section class="start-page">
+      <h1 class="game-name-heading">BIRD MATCH</h1>
+      <h3 class="highscore">
+        HIGH SCORE: <span class="main-page-highscore-element">0</span>
+      </h3>
+      <div class="btn-container">
+        <button class="start-game-btn">START GAME</button>
+        <button class="about-game-btn">ABOUT THE GAME</button>
+      </div>
+    </section>
+
+    <!-- Game Page -->
+    <section class="game-page hidden">
+      <header>
+        <div class="score-box">
+          <h3 class="game-page-title">BIRD MATCH</h3>
+          <h3 class="score-counter">
+            SCORE: <span class="score-counter-element">0</span>
+          </h3>
+          <h3 class="highscore-tracker">
+            HIGH SCORE: <span class="highscore-element">0</span>
+          </h3>
+        </div>
+      </header>
+
+      <section class="bird-img"></section>
+
+      <div class="options-container">
+        <div class="options-row">
+          <button class="option-btn">BLUE JAY</button>
+          <button class="option-btn">STELLER'S JAY</button>
+        </div>
+        <div class="options-row">
+          <button class="option-btn">NORTHERN CARDINAL</button>
+          <button class="option-btn">EURASIAN MAGPIE</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Game Over Page -->
+    <section class="game-over hidden">
+      <h1 class="game-over-heading">GAME OVER</h1>
+      <h3 class="final-score">
+        SCORE: <span class="final-score-element"></span>
+      </h3>
+      <h3 class="highscore">
+        HIGH SCORE: <span class="final-highscore-element"></span>
+      </h3>
+      <div class="btn-container">
+        <button class="play-again-btn">PLAY AGAIN</button>
+        <button class="home-btn">GO HOME</button>
+      </div>
+    </section>
+
+    <!-- About + Credits -->
+    <section class="about-and-credits hidden">
+      <button class="exit-about-btn">GO HOME</button>
+
+      <div>
+        <h2 class="about-section">ABOUT THE GAME</h2>
+        <p class="about-section-paragraph">
+          This is a small browser-based game designed to help users learn to
+          identify common birds. It was created by
+          <a href="https://github.com/peytonbighorse">Peyton Bighorse</a> as
+          part of a personal design and development project.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="credits-section">CREDITS</h2>
+        <p class="credits-section-paragraph">
+          Bird data provided by eBird, Merlin Bird ID, and the Cornell Lab of
+          Ornithology, used for educational and non-commercial purposes. The
+          font
+          <a href="https://fonts.google.com/specimen/Rubik" target="_blank"
+            >Rubik</a
+          >
+          was designed by
+          <a href="https://fonts.google.com/?query=Hubert%20and%20Fischer"
+            >Hubert and Fischer</a
+          >,
+          <a href="https://fonts.google.com/?query=Meir%20Sadan">Meir Sadan</a>,
+          <a href="https://fonts.google.com/?query=Cyreal">Cyreal</a>,
+          <a href="https://fonts.google.com/?query=Daniel%20Grumer"
+            >Daniel Grumer</a
+          >, and
+          <a href="https://fonts.google.com/?query=Omaima%20Dajani"
+            >Omaima Dajani</a
+          >, and is used under the
+          <a href="https://scripts.sil.org/OFL" target="_blank"
+            >SIL Open Font License 1.1</a
+          >. All code, design, and layout created by Peyton Bighorse.
+        </p>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <section class="modal hidden">
+      <h2 class="result">Correct!</h2>
+      <p class="birding-tip"></p>
+      <button class="next-bird-btn">Next Bird</button>
+      <button class="game-over-btn hidden">Game Over</button>
+    </section>
+
+    <script src="javaScript/ebirdData.js"></script>
+    <script src="javaScript/birdData.js"></script>
+    <script src="javaScript/script.js"></script>
+  </body>
+</html>
