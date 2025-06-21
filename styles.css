@@ -112,14 +112,12 @@ figcaption {
   line-height: -1;
   font-size: clamp(0.6rem, 2vw, 1rem);
 }
-.credits-section-paragraph a,
-.bird-img-caption a {
+a {
   color: #684e1b;
   transition: all 200ms ease-in-out;
 }
 
-.credits-section-paragraph a:hover,
-.bird-img-caption a:hover {
+a:hover {
   color: #16a853;
 }
 .game-page {
