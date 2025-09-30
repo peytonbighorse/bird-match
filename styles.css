@@ -200,7 +200,41 @@ a:hover {
 .hidden {
   display: none;
 }
+@media (max-width: 1300px) {
+  .about-section,
+  .credits-section {
+    margin: 0;
+    overflow: auto;
+    font-size: 30px !important;
+  }
 
+  .about-and-credits p {
+    text-align: left;
+    margin: 1vw 5vw;
+    font-size: clamp(1rem, 1vw, 1rem);
+  }
+  .score-box {
+    padding: 1rem;
+  }
+  .score-box h3 {
+    font-size: clamp(0.1rem, 2vw, 2rem);
+  }
+  .options-container button {
+    padding: 1rem;
+    font-size: clamp(0.1rem, 1.5vw, 2rem);
+  }
+  .bird-img,
+  .bird-img img {
+    max-width: 200px;
+    height: auto !important;
+  }
+  .bird-img {
+    margin: 20px auto;
+  }
+  figcaption {
+    font-size: clamp(0.6rem, 1vw, 0.6rem);
+  }
+}
 @media (max-width: 600px) {
   .about-section,
   .credits-section {
@@ -208,8 +242,7 @@ a:hover {
     overflow: auto;
   }
 
-  .about-section-paragraph,
-  .credits-section-paragraph {
+  .about-and-credits p {
     text-align: left;
     margin: 1vw 5vw;
   }

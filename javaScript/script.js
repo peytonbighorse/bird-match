@@ -61,6 +61,7 @@ function displayBird(bird) {
 function loadBird() {
   const randomNum = Math.floor(Math.random() * birdData.length);
   const currentBird = birdData[randomNum];
+  console.log(currentBird);
   currentCorrectAnswer = currentBird.correctAnswer;
 
   if (birdData.length === 1) {
@@ -176,6 +177,11 @@ function resetGame() {
   birdData = resetBirdData;
 }
 
+function playAgain() {
+  resetGame();
+  startGame();
+}
+
 function endGame() {
   if (!modal.classList.contains("hidden")) {
     modal.classList.add("hidden");
@@ -188,7 +194,7 @@ function endGame() {
 startGameBtn.addEventListener("click", startGame);
 aboutGameBtn.addEventListener("click", showAboutSection);
 exitAboutBtn.addEventListener("click", goHome);
-playAgainBtn.addEventListener("click", startGame);
+playAgainBtn.addEventListener("click", playAgain);
 homescreenBtn.addEventListener("click", goHome);
 nextBirdBtn.addEventListener("click", loadBird);
 gameOverBtn.addEventListener("click", endGame);
