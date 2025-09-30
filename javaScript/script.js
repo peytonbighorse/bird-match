@@ -61,7 +61,6 @@ function displayBird(bird) {
 function loadBird() {
   const randomNum = Math.floor(Math.random() * birdData.length);
   const currentBird = birdData[randomNum];
-  console.log(currentBird);
   currentCorrectAnswer = currentBird.correctAnswer;
 
   if (birdData.length === 1) {
@@ -174,7 +173,7 @@ function resetGame() {
   scoreElement.innerHTML = 0;
   nextBirdBtn.classList.remove("hidden");
   gameOverBtn.classList.add("hidden");
-  birdData = resetBirdData;
+  birdData = structuredClone(resetBirdData);
 }
 
 function playAgain() {

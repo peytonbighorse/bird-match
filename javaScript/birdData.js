@@ -874,7 +874,7 @@ let birdData = [
   },
   */
 
-let resetBirdData = [
+const resetBirdData = [
   {
     name: "american-robin",
     image: "assets/bird-pics/american-robin.jpg",
