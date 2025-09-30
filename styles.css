@@ -200,6 +200,32 @@ a:hover {
 .hidden {
   display: none;
 }
+
+@media (max-width: 1000px) {
+  .about-section,
+  .credits-section {
+    margin: 0;
+    overflow: auto;
+  }
+
+  .about-and-credits p {
+    text-align: left;
+    margin: 1vw 5vw;
+  }
+  .next-bird-btn {
+    font-size: clamp(0.7rem, 2.5vw, 1.3rem);
+    padding: 8px 10px;
+    margin-bottom: 10px;
+  }
+  .modal p {
+    font-size: clamp(0.75rem, 2vw, 1.5rem);
+    margin: 1.5vw;
+  }
+  .options-container button {
+    font-size: clamp(0.6rem, 2.5vw, 1.3rem) !important;
+    padding: 20px !important;
+  }
+}
 @media (max-width: 1300px) {
   .about-section,
   .credits-section {
@@ -233,30 +259,5 @@ a:hover {
   }
   figcaption {
     font-size: clamp(0.6rem, 1vw, 0.6rem);
-  }
-}
-@media (max-width: 600px) {
-  .about-section,
-  .credits-section {
-    margin: 0;
-    overflow: auto;
-  }
-
-  .about-and-credits p {
-    text-align: left;
-    margin: 1vw 5vw;
-  }
-  .next-bird-btn {
-    font-size: clamp(0.7rem, 2.5vw, 1.3rem);
-    padding: 8px 10px;
-    margin-bottom: 10px;
-  }
-  .modal p {
-    font-size: clamp(0.75rem, 2vw, 1.5rem);
-    margin: 1.5vw;
-  }
-  .option-btn {
-    font-size: clamp(0.6rem, 2.5vw, 1.3rem);
-    padding: 20px !important;
   }
 }
