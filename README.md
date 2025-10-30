@@ -52,4 +52,5 @@ Feel free to follow the project to track updates!
 
 ## About Me
 
-I'm a designer, coder, and performer based in Los Angeles. I’m currently building interactive fan-focused tools and learning more about product and mobile design.
+I'm a designer, coder, and performer. I’m currently building interactive fan-focused tools and learning more about product and mobile design.
+[Website → peytonbighorse.com](https://www.peytonbighorse.com)
