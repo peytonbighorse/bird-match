@@ -4,7 +4,7 @@
 
 **Live version:** [https://birdmatch.netlify.app](https://birdmatch.netlify.app)
 
-## 🐤 Features
+## Features
 
 - Randomized bird matching game with:
   - High-quality bird photos
@@ -16,14 +16,14 @@
 - Page transitions for start, game, game over, and about/credits
 - Fully mobile-responsive layout
 
-## 🛠 Built With
+## Built With
 
 - **HTML5** for structure  
 - **CSS3** for styling (including `clamp()` for fluid typography and layout)  
 - **Vanilla JavaScript** for game logic and DOM manipulation  
 - **Netlify** for deployment  
 
-## 📁 Project Structure
+## Project Structure
 
 - `index.html` — Main game layout and sections  
 - `styles.css` — All visual styling, typography, and responsiveness  
@@ -31,7 +31,7 @@
 - `birdData.js` — Bird image data, names, options, and tips  
 - `assets/` — Bird photos, background art, and font files  
 
-## 📚 What I Learned
+## What I Learned
 
 - Managing game state in vanilla JavaScript  
 - Creating dynamic, responsive layouts with `clamp()` and `flexbox`  
@@ -39,17 +39,18 @@
 - Organizing code into reusable functions  
 - Designing for clarity, fun, and adaptability across devices  
 
-## 🚧 Work in Progress
+## Work in Progress
 
 This is an ongoing project. Future improvements will include:
 
-- 🧠 Randomized multiple-choice answer order (to avoid pattern memorization)
-- 🗂 More bird images and regional variations
-- 🎵 Ambient sound or subtle background audio for immersion
-- 🧪 Accessibility improvements and keyboard navigation support
+- Randomized multiple-choice answer order (to avoid pattern memorization)
+- More bird images and regional variations
+- Ambient sound or subtle background audio for immersion
+- Accessibility improvements and keyboard navigation support
 
 Feel free to follow the project to track updates!
 
-## 🙋 About Me
+## About Me
 
-I'm a designer, coder, and performer based in Los Angeles. I’m currently building interactive fan-focused tools and learning more about product and mobile design.
+I'm a designer, coder, and performer. I’m currently building interactive fan-focused tools and learning more about product and mobile design.
+[Website → peytonbighorse.com](https://www.peytonbighorse.com)
